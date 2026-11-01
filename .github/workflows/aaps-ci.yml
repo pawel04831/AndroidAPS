@@ -104,7 +104,7 @@ jobs:
             emit KEY_ALIAS         "$S_KEY_ALIAS"
             emit KEY_PASSWORD      "$S_KEY_PASSWORD"
           fi
-          emit GDRIVE_OAUTH2 "$S_GDRIVE_OAUTH2"
+         
 
       - name: Check Secrets
         run: |
