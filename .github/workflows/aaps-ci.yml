@@ -249,9 +249,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: AAPS-Release-APKs
-          path: |
+          path:
            app/build/outputs/apk/full/release/*.apk
            app/build/outputs/apk/full/release/*.zip
+           app/build/outputs/apk/full/release/*.apk
+           app/build/outputs/apk/full/release/*.zip
+           wear/build/outputs/apk/**/*.apk
 
   # Configuration: Threshold-based cleanup
   # Clean up only occurs when total runs exceed: keep_runs + keep_threshold (e.g., 20 + 5 = 25)
