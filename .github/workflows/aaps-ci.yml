@@ -249,7 +249,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: AAPS-Release-APKs
-          path:
+          path: |
            app/build/outputs/apk/full/release/*.apk
            app/build/outputs/apk/full/release/*.zip
            app/build/outputs/apk/full/release/*.apk
