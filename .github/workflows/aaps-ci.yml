@@ -245,13 +245,13 @@ jobs:
               -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
               -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
 
-     - name: Upload APKs to Artifacts
-       uses: actions/upload-artifact@v4
-       with:
+      - name: Upload APKs to Artifacts
+        uses: actions/upload-artifact@v4
+        with:
           name: AAPS-Release-APKs
           path: |
-            app/build/outputs/apk/full/release/*.apk
-            app/build/outputs/apk/full/release/*.zip
+           app/build/outputs/apk/full/release/*.apk
+           app/build/outputs/apk/full/release/*.zip
 
   # Configuration: Threshold-based cleanup
   # Clean up only occurs when total runs exceed: keep_runs + keep_threshold (e.g., 20 + 5 = 25)
