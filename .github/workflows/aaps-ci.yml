@@ -59,7 +59,6 @@ on:
           - aapsclient2Debug
           - pumpcontrolRelease
           - pumpcontrolDebug
-
 jobs:
   build:
     name: Build AAPS
